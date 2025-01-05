@@ -29,6 +29,9 @@ function App() {
     <button onClick={
       Decreament
     }>Decreamentcreament : {Counter}</button>
+    <br />
+    <br /> 
+    <p>fooot print : {Counter}</p>
         </>
   )
 }
