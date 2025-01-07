@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({Username}) => {
   return (
     <>
    <div class="max-w-sm mx-auto bg-black rounded-xl shadow-md overflow-hidden">
@@ -10,7 +10,7 @@ const Card = () => {
     alt="Card image"
   />
   <div class="p-4">
-    <h2 class="text-xl font-semibold text-gray">Dog</h2>
+    <h2 class="text-xl font-semibold text-gray">{Username}</h2>
     <p class="mt-2 text-gray-600">
      Tailwid practice
     </p>

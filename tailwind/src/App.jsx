@@ -9,7 +9,9 @@ function App() {
     <>
       <h1 className='bg-green-50 text-black p-5 rounded-xl '>Tailwind test</h1>
       <br/>
-  <Card/>
+  <Card Username='ssssdd' />
+  <br /><br />
+  <Card Username='always' />
     </>
   )
 }
