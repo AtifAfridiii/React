@@ -7,7 +7,7 @@ const Card = ({Username}) => {
   <img
     class="w-25 h-25 object-cover"
     src="https://images.pexels.com/photos/16233277/pexels-photo-16233277/free-photo-of-dog-standing-on-lakeshore.png?auto=compress&cs=tinysrgb&w=600&lazy=load"
-    alt="Card image"
+    alt="Card image" 
   />
   <div class="p-4">
     <h2 class="text-xl font-semibold text-gray">{Username}</h2>
