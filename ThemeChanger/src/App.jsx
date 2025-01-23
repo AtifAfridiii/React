@@ -16,8 +16,9 @@ function App() {
 
 
    useEffect(()=>{
-    const 
-   })
+    const imp = document.querySelector('html').classList.remove('light','dark')
+    imp.add(theme)
+   },[theme])
 
 
   return (
