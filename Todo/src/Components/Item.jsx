@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { UseTodo } from '../Context/context';
+
 
 function TodoItem({ todo }) {
 

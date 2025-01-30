@@ -32,7 +32,7 @@ useEffect(()=>{
       localStorage.setItem('todos',JSON.stringify(todos))  
 },[todos])
   return (
-    <TodoProvider values={{todos,addTodo,deleteTodo,toggleTodo,updateTodo}}>
+    <TodoProvider value={{todos,addTodo,deleteTodo,toggleTodo,updateTodo}}>
      
      <div className="bg-[#172842] min-h-screen py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">

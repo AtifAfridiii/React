@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-
+import React from "react";
 
 export const TodoContext = createContext({
     todos:[
@@ -18,7 +18,7 @@ export const TodoContext = createContext({
 })
 
 export const UseTodo = ()=>{
-    return useContext(todoContext)
+    return useContext(TodoContext)
 }
 
-export const TodoProvider = todoContext.Provider
+export const TodoProvider = TodoContext.Provider
