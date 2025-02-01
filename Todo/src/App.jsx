@@ -2,6 +2,8 @@ import { TodoProvider } from './Context/context'
 import './App.css'
 import { useEffect, useState } from 'react'
 import TodoForm from './Components/Form'
+import TodoItem from './Components/TodoItem'; 
+
 
 function App() {
   const [todos ,setTodos] = useState([])
@@ -19,7 +21,8 @@ setTodos((prev)=>prev.filter((todo)=>todo.id!==id))
 }
 
 const toggleTodo = (id) =>{
-  setTodos((prev)=>prev.map((todo)=>todo===id ? {...todo,completed:!todo.completed} : todo))
+  setTodos((prev) => prev.map((todo) => (todo.id === id ? { ...todo, completed: !todo.completed } : todo)));
+
 }
 
 useEffect(()=>{
