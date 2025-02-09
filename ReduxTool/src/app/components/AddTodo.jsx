@@ -10,10 +10,10 @@ function AddTodo() {
 
     const addTodoHandler = (e) => {
       e.preventDefault();
-      if (!input.trim()) return; // Prevent empty todos
+      if (!input.trim()) return; 
   
       dispatch(addTodo({
-          id: nanoid(),  // Generate a unique ID
+          id: nanoid(),  
           text: input
       }));
       setInput('');
