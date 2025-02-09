@@ -1,17 +1,23 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodo } from '../../todo/todoSlice'
+import { nanoid } from '@reduxjs/toolkit'
+
 function AddTodo() {
 
     const [input,setInput] = React.useState('')
     const dispatch = useDispatch()
 
     const addTodoHandler = (e) => {
-        e.preventDefault()
-        dispatch(addTodo(input))
-        setInput('')
-    }
-
+      e.preventDefault();
+      if (!input.trim()) return; // Prevent empty todos
+  
+      dispatch(addTodo({
+          id: nanoid(),  // Generate a unique ID
+          text: input
+      }));
+      setInput('');
+  };
 
     return (
         <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
